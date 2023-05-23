@@ -13,78 +13,251 @@ body {
     /* background-color: red; */
 }
 
-.container-full {
-    width: 100%;
-    display: flex;
-}
 /* Menü */
 
-.nav{
+.nav {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
-    color:#000;
+    color: #000;
     margin-left: 20px;
     font-size: 14px;
-    
+
 }
-.nav a::after{
-    content:"";
+
+.nav a::after {
+    content: "";
     display: block;
     width: 0;
     height: 2px;
     background-color: #000;
     transition: .3s;
 }
-.nav a:hover::after{
+
+.nav a:hover::after {
     width: 100%;
 }
+
 #left,
-#right{
+#right {
     display: flex;
     align-items: center;
     width: 50%;
 }
-#right{
+
+#right {
     justify-content: flex-end;
 }
-#left>img{
-width: 115px;
+
+#left>img {
+    width: 115px;
 }
+
 /* Slider */
-.slide>img{
+.slide>img {
     width: 100%;
 }
 
 /* mini spot */
-.mini-spot-area{
+.mini-spot-area {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
-.mini-spot{
+
+.mini-spot {
     width: 170px;
 }
-.mini-spot a{
+
+.mini-spot a {
     text-decoration: none;
-    color:black;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.mini-spot a >p{
+
+.mini-spot a>p {
     text-align: center;
     text-decoration: underline;
-    color:#0067b8;
+    color: #0067b8;
 }
 
-.four{
+.img-spot-area {
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+}
+
+.img-spot {
+    width: 300px;
+}
+
+.img-spot a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img-spot img {
+    width: 290px;
+}
+
+.img-spot a>p {
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.img-spot div {
+    float: left;
+}
+
+.img-spot div>a {
+    color: #0067b8;
+}
+
+.img-spot div>a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #0067b8;
+    transition: .3s;
+}
+
+.img-spot div>a:hover::after {
+    width: 100%;
+}
+
+.position {
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.position img {
+    width: 1200px;
+    height: auto;
+}
+
+.position .title {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.position .content {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 300px;
+}
+
+.position .button {
+    position: absolute;
+    display: flex;
+    background-color: rgb(15, 84, 152);
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 280px;
+    left: 100px;
+    text-decoration: none;
+}
+
+.position .button:hover {
+    background-color: rgb(6, 56, 106);
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+    font-size: 16px;
+    margin-top: 80px;
+}
+
+.icons i {
+    margin-left: 30px;
+    font-size: 24px;
+}
 
 
+.container-full {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 243, 243);
+}
 
+.satir1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
 
+.satir2 {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.sutun {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    font-size: 12px;
+
+}
+
+.sutun a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+}
+
+.sutun a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .3s;
+}
+
+.sutun a:hover::after {
+    width: 100%;
+}
+.right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.right a{
+    font-size: 11px;
+}
+.right h5{
+    font-weight: lighter;
+    font-size: 12px;
+    margin-left:11px;
+}
+
+.right {
+    justify-content: flex-end;
 }
