@@ -261,3 +261,13 @@ body {
 .right {
     justify-content: flex-end;
 }
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    width: 50%;
+    font-size: 11px;
+}
+.left a{
+    margin-right: 10px;
+}
