@@ -1,2 +1,2 @@
 # microsoftClone
-website link is here -> https://nice-grass-0bdb8e510.3.azurestaticapps.net
+website link is here -> https://microsoft-clone-gamma.vercel.app/
